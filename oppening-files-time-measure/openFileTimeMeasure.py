@@ -22,11 +22,11 @@ def open_file_time_measure(file_type, file_path):
 with open('FileOpeningTimes.txt', 'a') as fp:
     fp.write(datetime.now().strftime("%m/%d/%Y, %H:%M:%S") +
              "\n--------------------\n")
-    fp.write(open_file_time_measure('HTML', "python.html"))
+    ## fp.write(open_file_time_measure('HTML', "python.html"))
     fp.write(open_file_time_measure('DOCX', "fileDoc.docx"))
     fp.write(open_file_time_measure('TXT', "fileText.txt"))
-    fp.write(open_file_time_measure('IMG', "imageFile.jpg"))
-    fp.write(open_file_time_measure('VIDEO', "VideoFile.mp4"))
-    time.sleep(1)
-    fp.write(open_file_time_measure('AUDIO', "AUDIO.mp3"))
+    ## fp.write(open_file_time_measure('IMG', "imageFile.jpg"))
+    ## fp.write(open_file_time_measure('VIDEO', "VideoFile.mp4"))
+    ## time.sleep(1)
+    ## fp.write(open_file_time_measure('AUDIO', "AUDIO.mp3"))
     fp.write("\n")
